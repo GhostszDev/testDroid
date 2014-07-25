@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: 705643fc91cc09a4c9a5bfbef10525a9
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: _level
+    100002: _Planks
+    100004: _switch
+    100006: ground
+    100008: ground_001
+    100010: plank1
+    100012: plank2
+    100014: plank3
+    100016: plank4
+    100018: pole1
+    100020: pole2
+    100022: pole3
+    100024: pole4
+    100026: pole5
+    100028: pole6
+    100030: switch
+    100032: switchBase
+    100034: //RootNode
+    400000: _level
+    400002: _Planks
+    400004: _switch
+    400006: ground
+    400008: ground_001
+    400010: plank1
+    400012: plank2
+    400014: plank3
+    400016: plank4
+    400018: pole1
+    400020: pole2
+    400022: pole3
+    400024: pole4
+    400026: pole5
+    400028: pole6
+    400030: switch
+    400032: switchBase
+    400034: //RootNode
+    2300000: ground
+    2300002: ground_001
+    2300004: plank1
+    2300006: plank2
+    2300008: plank3
+    2300010: plank4
+    2300012: pole1
+    2300014: pole2
+    2300016: pole3
+    2300018: pole4
+    2300020: pole5
+    2300022: pole6
+    2300024: switch
+    2300026: switchBase
+    3300000: ground
+    3300002: ground_001
+    3300004: plank1
+    3300006: plank2
+    3300008: plank3
+    3300010: plank4
+    3300012: pole1
+    3300014: pole2
+    3300016: pole3
+    3300018: pole4
+    3300020: pole5
+    3300022: pole6
+    3300024: switch
+    3300026: switchBase
+    4300000: switchBase
+    4300002: switch
+    4300004: ground_001
+    4300006: ground
+    4300008: pole1
+    4300010: pole2
+    4300012: pole3
+    4300014: pole4
+    4300016: pole5
+    4300018: pole6
+    4300020: plank1
+    4300022: plank2
+    4300024: plank3
+    4300026: plank4
+    7400000: switchOff
+    7400002: switchOn
+    7400004: bridgeUp
+    7400006: bridgeDown
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: switchOff
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _level
+        weight: 0
+      - path: _level/ground
+        weight: 0
+      - path: _level/ground_001
+        weight: 0
+      - path: _level/pole1
+        weight: 0
+      - path: _level/pole2
+        weight: 0
+      - path: _level/pole3
+        weight: 0
+      - path: _level/pole4
+        weight: 0
+      - path: _level/pole5
+        weight: 0
+      - path: _level/pole6
+        weight: 0
+      - path: _Planks
+        weight: 0
+      - path: _Planks/plank1
+        weight: 0
+      - path: _Planks/plank2
+        weight: 0
+      - path: _Planks/plank3
+        weight: 0
+      - path: _Planks/plank4
+        weight: 0
+      - path: switchBase
+        weight: 1
+      - path: switchBase/_switch
+        weight: 1
+      - path: switchBase/_switch/switch
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: switchOn
+      takeName: Default Take
+      firstFrame: 3
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _level
+        weight: 0
+      - path: _level/ground
+        weight: 0
+      - path: _level/ground_001
+        weight: 0
+      - path: _level/pole1
+        weight: 0
+      - path: _level/pole2
+        weight: 0
+      - path: _level/pole3
+        weight: 0
+      - path: _level/pole4
+        weight: 0
+      - path: _level/pole5
+        weight: 0
+      - path: _level/pole6
+        weight: 0
+      - path: _Planks
+        weight: 0
+      - path: _Planks/plank1
+        weight: 0
+      - path: _Planks/plank2
+        weight: 0
+      - path: _Planks/plank3
+        weight: 0
+      - path: _Planks/plank4
+        weight: 0
+      - path: switchBase
+        weight: 1
+      - path: switchBase/_switch
+        weight: 1
+      - path: switchBase/_switch/switch
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: bridgeUp
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _level
+        weight: 0
+      - path: _level/ground
+        weight: 0
+      - path: _level/ground_001
+        weight: 0
+      - path: _level/pole1
+        weight: 0
+      - path: _level/pole2
+        weight: 0
+      - path: _level/pole3
+        weight: 0
+      - path: _level/pole4
+        weight: 0
+      - path: _level/pole5
+        weight: 0
+      - path: _level/pole6
+        weight: 0
+      - path: _Planks
+        weight: 1
+      - path: _Planks/plank1
+        weight: 1
+      - path: _Planks/plank2
+        weight: 1
+      - path: _Planks/plank3
+        weight: 1
+      - path: _Planks/plank4
+        weight: 1
+      - path: switchBase
+        weight: 0
+      - path: switchBase/_switch
+        weight: 0
+      - path: switchBase/_switch/switch
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: bridgeDown
+      takeName: Default Take
+      firstFrame: 3
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _level
+        weight: 0
+      - path: _level/ground
+        weight: 0
+      - path: _level/ground_001
+        weight: 0
+      - path: _level/pole1
+        weight: 0
+      - path: _level/pole2
+        weight: 0
+      - path: _level/pole3
+        weight: 0
+      - path: _level/pole4
+        weight: 0
+      - path: _level/pole5
+        weight: 0
+      - path: _level/pole6
+        weight: 0
+      - path: _Planks
+        weight: 1
+      - path: _Planks/plank1
+        weight: 1
+      - path: _Planks/plank2
+        weight: 1
+      - path: _Planks/plank3
+        weight: 1
+      - path: _Planks/plank4
+        weight: 1
+      - path: switchBase
+        weight: 0
+      - path: switchBase/_switch
+        weight: 0
+      - path: switchBase/_switch/switch
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

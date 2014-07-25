@@ -6,12 +6,15 @@ using UnityEngine.SocialPlatforms;
 public class menuScr : MonoBehaviour {
 
 	//varibles
-	bool pauseMenu = false;
 	public GameObject menuBg;
 	public GameObject quitBG;
-	public GUIText testText;
+
+	public GUIText noteText;
+
 	public bool autoSignin = false;
 	bool quitMenu = false;
+	bool pauseMenu = false;
+	public bool cutScene = false;
 
 	public GUITexture resume;
 	public GUITexture googlePlus;
@@ -19,7 +22,6 @@ public class menuScr : MonoBehaviour {
 	public GUITexture quit;
 	public GUITexture yes;
 	public GUITexture no;
-
 	public GUITexture play;
 
 
@@ -31,21 +33,13 @@ public class menuScr : MonoBehaviour {
 		
 		// Activate the Google Play Games platform
 		PlayGamesPlatform.Activate();
-
-		if (autoSignin && Application.loadedLevel == 0) {
-
-			Social.localUser.Authenticate((bool success) => {
-				// handle success or failure
-			});
-
-		}
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown(KeyCode.Escape) && Application.loadedLevel != 0) {
+		if (Input.GetKeyDown(KeyCode.Escape) && Application.loadedLevel != 0 && cutScene == false) {
 
 			if(pauseMenu){
 				pauseMenu = false;
@@ -55,10 +49,9 @@ public class menuScr : MonoBehaviour {
 
 		}
 
-		if (pauseMenu && Application.loadedLevel != 0) {
+		if (pauseMenu && Application.loadedLevel != 0 && cutScene == false) {
 
 			menuBg.SetActiveRecursively(true);
-			testText.text = "Pause: true";
 
 			foreach (Touch touch in Input.touches){
 
@@ -103,27 +96,27 @@ public class menuScr : MonoBehaviour {
 		} else {
 
 			menuBg.SetActiveRecursively(false);
-			testText.text = "Pause: false";
 		}
 
-		foreach (Touch touch in Input.touches) {
+		if(cutScene == false){
+			foreach (Touch touch in Input.touches) {
 
-			if(touch.phase == TouchPhase.Stationary && play.HitTest(touch.position) && Application.loadedLevel != 1){
+				if(touch.phase == TouchPhase.Stationary && play.HitTest(touch.position) && Application.loadedLevel != 1){
 				
-				Application.LoadLevel(1);
+					Application.LoadLevel(1);
 				
+				}
 			}
-
 
 		if (Application.loadedLevel != 0) {
 
-			DestroyObject(play);
+				play.enabled = false;
 
 		}
 	
 	}
 
-		if (quitMenu && Application.loadedLevel != 0) {
+		if (quitMenu && Application.loadedLevel != 0 && cutScene == false) {
 			foreach (Touch touch in Input.touches) {
 			
 				if (touch.phase == TouchPhase.Stationary && yes.HitTest (touch.position) && Application.loadedLevel != 0) {
@@ -142,7 +135,18 @@ public class menuScr : MonoBehaviour {
 			
 			} 
 		}else{
+
 			quitBG.SetActiveRecursively (false);
+
+		}
+
+		if (cutScene == true) {
+
+			noteText.enabled = true;
+
+		}else{
+
+			noteText.enabled = false;
 		}
 	}
 	

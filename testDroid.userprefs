@@ -1,9 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\testDroid\scripts\scoreScr.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\testDroid\scripts\touchControls.cs">
     <Files>
-      <File FileName="Assets\testDroid\scripts\menuScr.cs" Line="110" Column="4" />
-      <File FileName="Assets\testDroid\scripts\scoreScr.cs" Line="55" Column="18" />
+      <File FileName="Assets\testDroid\scripts\testScr.cs" Line="17" Column="52" />
+      <File FileName="Assets\testDroid\scripts\menuScr.cs" Line="62" Column="6" />
+      <File FileName="Assets\testDroid\scripts\scoreScr.cs" Line="66" Column="4" />
+      <File FileName="Assets\testDroid\scripts\touchControls.cs" Line="35" Column="15" />
+      <File FileName="..\..\ProjectYetti\Assets\ProjectYetti\scripts\yetti.js" Line="22" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

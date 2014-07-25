@@ -19,7 +19,7 @@ public class scoreScr : MonoBehaviour {
 	public GUIText notice;
 
 	bool signInBonus = false;
-	bool noticeBool = false;
+	public bool noticeBool = false;
 
 	// Use this for initialization
 	void Start () {
@@ -58,9 +58,13 @@ public class scoreScr : MonoBehaviour {
 
 		if (noticeBool){
 
-			notice.text = "You got recieved " + increaseCoin + " coins./n You got recieved " + increaseMoney + " dollars";
+			notice.enabled = true;
+			notice.text = "You got recieved " + increaseCoin + " coins.\n You got recieved " + increaseMoney + " dollars";
 			countdown--;
 
+		}else{
+
+			notice.enabled = false;
 		}
 	
 	}
