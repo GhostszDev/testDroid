@@ -229,7 +229,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-fa\auth_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\color\common_signin_btn_text_dark.xml" />
  <Reference Include="GPGSUtils">
- <HintPath>C:/Users/ghost/Documents/GitHub/testDroid/Assets/Plugins/GPGSUtils.dll</HintPath>
+ <HintPath>C:/Users/ghost/Documents/testDroid/Assets/Plugins/GPGSUtils.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
